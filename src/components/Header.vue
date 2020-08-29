@@ -1,8 +1,6 @@
 <template>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top navStyle">
-            <router-link to="/" class="router-link">
-                <a class="navbar-brand logo" ref="home">профсреда</a>
-            </router-link>
+            <a class="navbar-brand logo" href="http://www.profsreda.com/" target="_blank" style="color: #f23333;">профсреда</a>
             <button @click="animate_toggler()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <div class="anim-bar-dark anim-2">
                     <span class="icon-bar"></span>
@@ -13,13 +11,23 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent" @click="animate_navbar()">
                 <ul class="navbar-nav mr-auto mx-auto links">  <!-- v-if="showHeaderContent" -->
                     <li class="nav-item">
-                        <router-link to="/" class="router-link">
-                            <a class="nav-link" ref="YourCards">Мои карточки</a>
-                        </router-link>
+                        <a class="nav-link" href="http://www.profsreda.com/minecraft" target="_blank">Minecraft</a>
                     </li>
                     <li class="nav-item">
-                        <router-link to="/add-card" class="router-link">
-                            <a class="nav-link" ref="AddCard">Добавить карточку</a>
+                        <a class="nav-link" href="http://www.profsreda.com/wsr" target="_blank">Смотри и пробуй с WSR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://www.profsreda.com/teacher" target="_blank">Классным руководителям</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://www.profsreda.com/hakaton" target="_blank">Хакатон</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://www.profsreda.com/city_travel" target="_blank">City Travel</a>
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/" class="router-link">
+                            <a class="nav-link ourSite" ref="AddCard">RKC</a>
                         </router-link>
                     </li>
                 </ul>
@@ -107,9 +115,7 @@ export default {
     color: #000000;
     font-family: 'PT Mono',Arial,sans-serif;
 }
-.router-link {
-  text-decoration: none; /* отменяем подчеркивание ссылки */
-}
+
 .navStyle{
     background-color: rgba(255,255,255,1);
     box-shadow: 0px 1px 3px rgba(0,0,0,0.10);
@@ -117,17 +123,20 @@ export default {
 }
 .logo{
     font-family: 'PT Mono',Arial,sans-serif;
-    color: #f23333;
     font-weight: 500;
     padding: 0px 0px 0px 40px;
     font-size: 24px;
 }
 .links{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     color: #000000;
 }
 .nav-link:hover{
+    color: #ff8562 !important;
+}
+.ourSite{
+    text-decoration: underline;
     color: #ff8562 !important;
 }
 </style>
