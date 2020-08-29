@@ -9,7 +9,7 @@
 
 <script>
 import { mapGetters } from 'vuex';
-// import PageHeader from './components/Header.vue'
+import PageHeader from './components/Header.vue'
 import $ from "jquery"
 export default {
   name: 'App',

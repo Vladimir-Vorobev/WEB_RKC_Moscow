@@ -2,8 +2,8 @@ export const APP_STORE = {
 	state: {
 		email: '',
 		SessionID: 0,
-		serverIp: 'https://profeventsserver.tk',
-		socketIp: 'https://profeventsserver.tk',
+		serverIp: '',
+		socketIp: '',
 	},
 	mutations: {
 		GET_USER_EMAIL(state, value) {
