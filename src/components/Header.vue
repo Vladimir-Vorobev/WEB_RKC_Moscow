@@ -197,6 +197,6 @@ export default {
     text-decoration: none;
 }
 .navItem a:hover{
-    color: red;
+    color: #c62828;
 }
 </style>
