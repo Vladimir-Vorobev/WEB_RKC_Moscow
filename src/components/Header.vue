@@ -26,15 +26,25 @@
                     <li class="nav-item">
                         <a class="nav-link" href="http://www.profsreda.com/city_travel" target="_blank">City Travel</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-none d-sm-none d-md-none d-lg-block d-xl-block">
                         <router-link to="/" class="router-link">
                             <a class="nav-link ourSite" ref="AddCard">RKC</a>
                         </router-link>
                     </li>
+                    <li class="nav-item dropdown d-block d-sm-block d-md-block d-lg-none d-xl-none">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </nav>
-        <div class="siteNav">
+        <div class="siteNav d-none d-sm-none d-md-none d-lg-table d-xl-table">
             <div class="navItem"><a href="#">Мероприятия</a></div>
             <div class="navItem"><a href="#">Профиль</a></div>
         </div>
@@ -151,21 +161,31 @@ export default {
 .navbar-nav{
     padding-right: 40px;
 }
-
 .siteNav{
     position: fixed;
     z-index: 99999;
     width: 80%;
     border-radius: 3px;
-    top: 65px;
     left: 0;
     right: 0;
     background-color: rgb(45, 45, 117);
-    height: 8vh;
     display: table;
-    margin: 0px 10%;
     color: white;
     text-align: center;
+}
+@media (max-width: 1244px) { 
+    .siteNav{
+        top: 80px;
+        height: 7vh;
+        margin: 0px 10%;
+    }
+}
+@media (min-width: 1245px) { 
+    .siteNav{
+        top: 70px;
+        height: 8vh;
+        margin: 0px 10%;
+    }
 }
 .navItem{
     display: table-cell;
