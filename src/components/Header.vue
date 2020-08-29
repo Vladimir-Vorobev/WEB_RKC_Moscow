@@ -34,14 +34,6 @@
                 </ul>
             </div>
         </nav>
-        <!-- <div class="siteNav">
-            <div class="row" style="height: 100%">
-                <div class="col-6">
-                    <div class="navItem">Мероприятия</div>
-                </div>
-                <div class="col-6"></div>
-            </div>
-        </div> -->
         <div class="siteNav">
             <div class="navItem"><a href="#">Мероприятия</a></div>
             <div class="navItem"><a href="#">Профиль</a></div>
