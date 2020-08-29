@@ -15,8 +15,9 @@ Vue.use(VueSweetalert2);
 
 
 import MainPage from './components/MainPage.vue'
-
-
+import Login from './components/Login.vue'
+import Registration from './components/Registration.vue'
+import PageNotFound from './components/PageNotFound.vue'
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)
@@ -24,7 +25,9 @@ Vue.use(Vuex)
 
 const routes = [
   { path: '/', component: MainPage },
-  // { path: '/404', component: PageNotFound }, { path: '*', redirect: '/404' }
+  { path: '/registration', component: Registration },
+  { path: '/login', component: Login },
+  { path: '/404', component: PageNotFound }, { path: '*', redirect: '/404' }
 ]
 
 const router = new VueRouter({
