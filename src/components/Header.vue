@@ -1,4 +1,5 @@
 <template>
+    <div>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top navStyle">
             <a class="navbar-brand logo" href="http://www.profsreda.com/" target="_blank" style="color: #f23333;">профсреда</a>
             <button @click="animate_toggler()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,6 +34,19 @@
                 </ul>
             </div>
         </nav>
+        <!-- <div class="siteNav">
+            <div class="row" style="height: 100%">
+                <div class="col-6">
+                    <div class="navItem">Мероприятия</div>
+                </div>
+                <div class="col-6"></div>
+            </div>
+        </div> -->
+        <div class="siteNav">
+            <div class="navItem"><a href="#">Мероприятия</a></div>
+            <div class="navItem"><a href="#">Профиль</a></div>
+        </div>
+    </div>
 </template>
 
 
@@ -144,5 +158,34 @@ export default {
 }
 .navbar-nav{
     padding-right: 40px;
+}
+
+.siteNav{
+    position: fixed;
+    z-index: 99999;
+    width: 80%;
+    border-radius: 3px;
+    top: 65px;
+    left: 0;
+    right: 0;
+    background-color: rgb(45, 45, 117);
+    height: 8vh;
+    display: table;
+    margin: 0px 10%;
+    color: white;
+    text-align: center;
+}
+.navItem{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 100%;
+}
+.navItem a{
+    color: white;
+    text-decoration: none;
+}
+.navItem a:hover{
+    color: red;
 }
 </style>
