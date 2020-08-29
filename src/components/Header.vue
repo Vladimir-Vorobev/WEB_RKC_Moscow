@@ -113,22 +113,22 @@ export default {
 <style scoped>
 .navbar-light .navbar-nav .nav-link {
     color: #000000;
-    font-family: 'PT Mono',Arial,sans-serif;
+    /* font-family: 'PT Mono',Arial,sans-serif; */
+    font-family: 'PT Mono', monospace;
 }
-
 .navStyle{
     background-color: rgba(255,255,255,1);
     box-shadow: 0px 1px 3px rgba(0,0,0,0.10);
-    padding: 13px 0px;
+    padding: 17px 0px;
 }
 .logo{
-    font-family: 'PT Mono',Arial,sans-serif;
+    font-family: 'PT Mono', monospace;
     font-weight: 500;
     padding: 0px 0px 0px 40px;
     font-size: 24px;
 }
 .links{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     color: #000000;
 }
@@ -138,5 +138,11 @@ export default {
 .ourSite{
     text-decoration: underline;
     color: #ff8562 !important;
+}
+.nav-item{
+    padding: 0px 15px;
+}
+.navbar-nav{
+    padding-right: 40px;
 }
 </style>
