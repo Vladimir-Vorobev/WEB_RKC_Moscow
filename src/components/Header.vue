@@ -43,7 +43,7 @@
                 </ul>
             </div>
         </nav>
-        <div class="siteNav d-none d-sm-none d-md-none d-lg-table d-xl-table">
+        <div class="siteNav PCsiteNav d-none d-sm-none d-md-none d-lg-table d-xl-table">
             <div class="navItem"><a href="#">Мероприятия</a></div>
             <div class="navItem"><a href="#">Профиль</a></div>
         </div>
