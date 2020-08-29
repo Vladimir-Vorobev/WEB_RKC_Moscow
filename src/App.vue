@@ -14,7 +14,7 @@ import $ from "jquery"
 export default {
   name: 'App',
   components: { PageHeader },
-  computed: { ...mapGetters(['email', 'allEventsScroll', 'openDaysScroll']) },
+  computed: { ...mapGetters(['email']) },
   beforeCreate(){
     let dataq = document.cookie.split(";")
     let name = ''
@@ -26,14 +26,8 @@ export default {
                 if(name == 'email'){
                     b = 1
                 }
-                else if(name == 'allEventsScroll'){
-                    b = 2
-                }
-                else if(name == 'openDaysScroll'){
-                    b = 3
-                }
                 else if(name == 'SessionID'){
-                    b = 4
+                    b = 2
                 }
                 name = ''
             }
@@ -46,14 +40,6 @@ export default {
             b = 0
         }
         else if(b == 2){
-            this.$store.commit('SET_ALL_EVENTS_SCROLL', name)
-            b = 0
-        }
-        else if(b == 3){
-            this.$store.commit('SET_OPEN_DAYS_SCROLL', name)
-            b = 0
-        }
-        else if(b == 4){
             this.$store.commit('GET_USER_SESSIONID', name)
             b = 0
         }
