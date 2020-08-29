@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap_lessons",
+  "name": "web_rkc_moscow",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -45,10 +45,10 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Vladimir-Vorobev/lit-vue-dev.git"
+    "url": "git+https://github.com/Vladimir-Vorobev/WEB_RKC_Moscow.git"
   },
   "bugs": {
-    "url": "https://github.com/Vladimir-Vorobev/lit-vue-dev/issues"
+    "url": "https://github.com/Vladimir-Vorobev/WEB_RKC_Moscow/issues"
   },
-  "homepage": "https://github.com/Vladimir-Vorobev/lit-vue-dev#readme"
+  "homepage": "https://github.com/Vladimir-Vorobev/WEB_RKC_Moscow#readme"
 }
