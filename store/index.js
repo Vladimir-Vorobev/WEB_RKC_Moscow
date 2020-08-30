@@ -1,7 +1,8 @@
 export const APP_STORE = {
 	state: {
 		email: '',
-		SessionID: 0,
+		SessionID: '',
+		role: '',
 		serverIp: '',
 		socketIp: '',
 	},

@@ -85,6 +85,7 @@ export default {
                     window.location.reload()
                 }   
                 this.loginText = data.email
+                this.$store.state.role = data.role
                 this.role = data.role
                 document.querySelector('.login').style.display = 'none'
                 document.querySelector('.person_menu').style.display = 'block'
