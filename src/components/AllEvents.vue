@@ -30,7 +30,6 @@
                             <div class="info-item">
                                 <div class="item-lable">Формат:</div>
                                 <div class="ii-main">
-                                    <i class="far fa-hourglass"></i> 
                                     <span>дистанционно</span>
                                 </div>
                             </div>
