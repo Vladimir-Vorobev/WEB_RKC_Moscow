@@ -36,7 +36,9 @@
                             RKC
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Мероприятия</a>
+                        <router-link to="/events" class="router-link">
+                            <a class="dropdown-item" ref="Events">Мероприятия</a>
+                        </router-link>
                         <a class="dropdown-item" href="#">Профиль</a>
                         </div>
                     </li>
@@ -44,7 +46,16 @@
             </div>
         </nav>
         <div class="siteNav PCsiteNav d-none d-sm-none d-md-none d-lg-table d-xl-table">
-            <div class="navItem"><a href="#">Мероприятия</a></div>
+            <div class="navItem">
+                <router-link to="/events" class="router-link">
+                    <a ref="Events">Мероприятия</a>
+                </router-link>
+            </div>
+            <div class="navItem" v-if="role == 'admin'">
+                <router-link to="/add-event" class="router-link">
+                    <a ref="AddEvent">Добавить мероприятие</a>
+                </router-link>
+            </div>
             <div class="navItem"><a href="#">Профиль</a></div>
         </div>
     </div>
@@ -59,7 +70,7 @@ export default {
     data(){
         return {
             loginText: 'Войти',
-            role: '',
+            role: this.$store.getters.role,
             // showHeaderContent: false,
         }
     },
@@ -127,6 +138,9 @@ export default {
 </script>
 
 <style scoped>
+.router-link{
+    color: #000000;
+}
 .navbar-light .navbar-nav .nav-link {
     color: #000000;
     /* font-family: 'PT Mono',Arial,sans-serif; */
