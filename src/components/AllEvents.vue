@@ -52,7 +52,7 @@
                             <button class="btn btn-outline-blue">Записаться</button>
                         </div>
                         <div class="ib" v-if="role == 'admin'">
-                            <button class="btn btn-blue" @click="showParticipant('event-1-p')">Участник</button>
+                            <button class="btn btn-blue" @click="showParticipant('event-1-p')">Участники</button>
                         </div>
                         <div class="ib" v-if="role == 'admin'">
                             <button class="btn btn-blue" @click="setPoints('event-1-p')">Оценить</button>
