@@ -54,6 +54,9 @@
                         <div class="ib" v-if="role == 'admin'">
                             <button class="btn btn-blue" @click="showParticipant('event-1-p')">Участник</button>
                         </div>
+                        <div class="ib" v-if="role == 'admin'">
+                            <button class="btn btn-blue" @click="setPoints('event-1-p')">Оценить</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -78,6 +81,9 @@ export default {
         showParticipant(id){
             if(document.getElementById(id).style.display != 'block') document.getElementById(id).style.display = 'block'
             else document.getElementById(id).style.display = 'none'
+        },
+        setPoints(id){
+            this.$router.push({ path: `/set-points/${id}` })
         }
     },
 }

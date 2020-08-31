@@ -20,6 +20,7 @@ import Registration from './components/Registration.vue'
 import PageNotFound from './components/PageNotFound.vue'
 import AddEvent from './components/AddEvent.vue'
 import Events from './components/AllEvents.vue'
+import SetPoints from './components/SetPoints.vue'
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)
@@ -29,8 +30,9 @@ const routes = [
   { path: '/', component: MainPage },
   { path: '/registration', component: Registration },
   { path: '/login', component: Login },
-  { path: '/add-event', component: AddEvent },
   { path: '/events', component: Events },
+  { path: '/add-event', component: AddEvent },
+  { path: '/set-points/:id', component: SetPoints },
   { path: '/404', component: PageNotFound }, { path: '*', redirect: '/404' }
 ]
 
