@@ -27,6 +27,18 @@
                         <div class="name col-9">Использование правильных технологий</div>
                         <div class="point col-3"><input type="text" class="inputPoint" maxlength="1">/1</div>
                     </div>
+                    <div class="criterion row">
+                        <div class="name col-9">Использование правильных технологий</div>
+                        <div class="point col-1"><input type="text" class="inputPoint" maxlength="1">/1</div>
+                        <div class="point col-1"><input type="text" class="inputPoint" maxlength="1">/1</div>
+                        <div class="point col-1"><input type="text" class="inputPoint" maxlength="1">/1</div>
+                    </div>
+                    <div class="criterion row">
+                        <div class="name col-9">Использование правильных технологий</div>
+                        <div class="point col-1"><input type="text" class="inputPoint" maxlength="1">/1</div>
+                        <div class="point col-1"><input type="text" class="inputPoint" maxlength="1">/1</div>
+                        <div class="point col-1"><input type="text" class="inputPoint" maxlength="1">/1</div>
+                    </div>
                 </div>
                 <div class="buttons">
                     <div class="ib">
@@ -73,6 +85,9 @@ export default {
     min-height: 400px;
     padding: 15px 20px;
     position: relative;
+}
+.criteria{
+    margin-bottom: 4.5em;
 }
 .criterion{
     margin-bottom: 0.6em;
