@@ -17,5 +17,6 @@ export const APP_STORE = {
 	getters: {
 		email: (state) => state.email,
 		SessionID: (state) => state.SessionID,
+		role: (state) => state.role,
 	},
 };
