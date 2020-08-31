@@ -2,7 +2,7 @@ export const APP_STORE = {
 	state: {
 		email: '',
 		SessionID: '',
-		role: '',
+		role: 'admin',
 		serverIp: '',
 		socketIp: '',
 	},

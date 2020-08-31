@@ -51,6 +51,11 @@
                     <a ref="Events">Мероприятия</a>
                 </router-link>
             </div>
+            <div class="navItem" v-if="role == 'admin'">
+                <router-link to="/add-event" class="router-link">
+                    <a ref="AddEvent">Добавить мероприятие</a>
+                </router-link>
+            </div>
             <div class="navItem"><a href="#">Профиль</a></div>
         </div>
     </div>
@@ -65,7 +70,7 @@ export default {
     data(){
         return {
             loginText: 'Войти',
-            role: '',
+            role: this.$store.getters.role,
             // showHeaderContent: false,
         }
     },

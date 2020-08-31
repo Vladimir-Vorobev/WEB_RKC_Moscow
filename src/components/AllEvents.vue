@@ -35,6 +35,7 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="org">Организатор: профсреда</div>
                         <div id="event-1-p" class="participants" style="display: none;">
                             <div class="participant">
                                 <div class="name">Алексей Иванов</div>
@@ -158,6 +159,10 @@ export default {
 }
 .ib{
     display: table-cell;
+}
+.org{
+    padding: 15px 20px;
+    font-size: 1.1em;
 }
 .participants{
     margin-bottom: 4.5em;

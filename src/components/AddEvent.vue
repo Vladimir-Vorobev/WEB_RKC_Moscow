@@ -1,11 +1,40 @@
 <template>
     <div class="main">
-        Название: <input id="name" type="text">
-        Организатор: <input id="org" type="text">
-        Для кого: <input id="for" type="text">
-        Город: <input id="city" type="text">
-        Формат: <input id="format" type="text">
-        <button @click="add_event()">Сохранить</button>
+        <div class="warp container">
+            <div class="formbox">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text formInput" id="name">Название</span>
+                    </div>
+                    <input name="name" type="text" class="form-control name formInput" aria-label="Название" aria-describedby="name">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text formInput" id="org">Организатор</span>
+                    </div>
+                    <input name="org" type="text" class="form-control org formInput" aria-label="Организатор" aria-describedby="org">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text formInput" id="for">Для кого</span>
+                    </div>
+                    <input name="for" type="text" class="form-control for formInput" aria-label="Для кого" aria-describedby="for">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text formInput" id="city">Город</span>
+                    </div>
+                    <input name="city" type="text" class="form-control city formInput" aria-label="Город" aria-describedby="city">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text formInput" id="format">Формат</span>
+                    </div>
+                    <input name="format" type="text" class="form-control format formInput"  aria-label="Формат" aria-describedby="format">
+                </div>
+                <button class="btn btn-rounded-outline-almbb-success" @click="add_event()">Сохранить</button>
+            </div>
+        </div>
         <div class="footer"><Footer></Footer></div> 
     </div>
 </template>
@@ -86,7 +115,7 @@ export default {
 <style scoped>
 .warp{
     flex: 1 0 auto;
-    padding-top: 150px !important;
+    padding-top: 200px !important;
 }
 .footer{
     flex: 0 0 auto;
@@ -97,7 +126,18 @@ export default {
     min-height: 100vh;
     height: 100%;
     padding: 0px 0px;
-    margin-top: 120px;
     margin-bottom: 0px;
+}
+.formbox{
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 14px 0px rgba(112,112,112,0.1);
+    min-height: 300px;
+    padding: 25px 30px;
+}
+.formInput{
+    border-radius: 50px;
 }
 </style>
