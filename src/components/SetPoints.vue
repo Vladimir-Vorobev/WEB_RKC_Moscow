@@ -13,28 +13,31 @@
                         </select>
                     </div>
                 </div>
+                <div class="ib" style="width: 100%;">
+                    <button class="btn btn-blue" @click="setPoints('event-1-p')">Загрузить критерии из Excel</button>
+                </div>
                 <hr>
                 <div class="criteria">
                     <div class="criterion row">
-                        <div class="name col-9">Использование правильных технологий</div>
+                        <div class="name col-9">Использование правильных технологий (O)</div>
                         <div class="point col-3"><input type="text" class="inputPoint" maxlength="1">/1</div>
                     </div>
                     <div class="criterion row">
-                        <div class="name col-9">Использование правильных технологий</div>
+                        <div class="name col-9">Использование правильных технологий (O)</div>
                         <div class="point col-3"><input type="text" class="inputPoint" maxlength="1">/1</div>
                     </div>
                     <div class="criterion row">
-                        <div class="name col-9">Использование правильных технологий</div>
+                        <div class="name col-9">Использование правильных технологий (O)</div>
                         <div class="point col-3"><input type="text" class="inputPoint" maxlength="1">/1</div>
                     </div>
                     <div class="criterion row">
-                        <div class="name col-9">Использование правильных технологий</div>
+                        <div class="name col-9">Использование правильных технологий (J)</div>
                         <div class="point col-1"><input type="text" class="inputPoint" maxlength="1">/1</div>
                         <div class="point col-1"><input type="text" class="inputPoint" maxlength="1">/1</div>
                         <div class="point col-1"><input type="text" class="inputPoint" maxlength="1">/1</div>
                     </div>
                     <div class="criterion row">
-                        <div class="name col-9">Использование правильных технологий</div>
+                        <div class="name col-9">Использование правильных технологий (J)</div>
                         <div class="point col-1"><input type="text" class="inputPoint" maxlength="1">/1</div>
                         <div class="point col-1"><input type="text" class="inputPoint" maxlength="1">/1</div>
                         <div class="point col-1"><input type="text" class="inputPoint" maxlength="1">/1</div>

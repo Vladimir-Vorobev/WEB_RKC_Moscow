@@ -3,7 +3,7 @@
         <div class="warp container">
             <div class="events">
                 <div class="event">
-                    <div class="event-name">Тестовое мероприятие</div>
+                    <div class="event-name">Начало нового учебного года</div>
                     <div class="event-body">
                         <div class="info-block">
                             <div class="info-item">
@@ -28,15 +28,25 @@
                                 </div>
                             </div>
                             <div class="info-item">
+                                <div class="item-lable">Формат:</div>
+                                <div class="ii-main">
+                                    <i class="far fa-hourglass"></i> 
+                                    <span>дистанционно</span>
+                                </div>
+                            </div>
+                            <!-- <div class="info-item">
                                 <div class="item-lable">Зарегистрировалось:</div>
                                 <div class="ii-main">
                                     <i class="far fa-user"></i> 
                                     <span>10/30</span>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="org">Организатор: профсреда</div>
+                        <div class="org">Город: Москва</div>
+                        <div class="org">Для кого: учащиеся 7-11 классов</div><br><br>
                         <div id="event-1-p" class="participants" style="display: none;">
+
                             <div class="participant">
                                 <div class="name">Алексей Иванов</div>
                                 <div class="points">Баллы: <span style="font-style: italic">5/6</span></div>
@@ -46,13 +56,52 @@
                                 <div class="points">Баллы: <span style="font-style: italic">3/6</span></div>
                             </div>
                         </div>
+                        <div id="event-2-p" class="participants" style="display: none;">
+                        <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text formInput" id="name">Фамилия</span>
+                    </div>
+                    <input name="name" type="text" class="form-control name formInput" aria-label="Название" aria-describedby="name">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text formInput" id="org">Имя</span>
+                    </div>
+                    <input name="org" type="text" class="form-control org formInput" aria-label="Организатор" aria-describedby="org">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text formInput" id="for">Отчество</span>
+                    </div>
+                    <input name="for" type="text" class="form-control for formInput" aria-label="Для кого" aria-describedby="for">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text formInput" id="city">Телефон</span>
+                    </div>
+                    <input name="city" type="text" class="form-control city formInput" aria-label="Город" aria-describedby="city">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text formInput" id="format">Email</span>
+                    </div>
+                    <input name="format" type="text" class="form-control format formInput"  aria-label="Формат" aria-describedby="format">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text formInput" id="format">Откуда вы</span>
+                    </div>
+                    <input name="format" type="text" class="form-control format formInput"  aria-label="Формат" aria-describedby="format">
+                </div>
+                <button class="btn btn-rounded-outline-almbb-success">Сохранить</button>
+                        </div>
                     </div>
                     <div class="buttons">
-                        <div class="ib"  v-if="role != 'admin'">
-                            <button class="btn btn-outline-blue">Записаться</button>
+                        <div class="ib">
+                            <button class="btn btn-outline-blue" @click="showParticipant('event-2-p')">Записаться</button>
                         </div>
                         <div class="ib" v-if="role == 'admin'">
-                            <button class="btn btn-blue" @click="showParticipant('event-1-p')">Участник</button>
+                            <button class="btn btn-blue" @click="showParticipant('event-1-p')">Участники</button>
                         </div>
                         <div class="ib" v-if="role == 'admin'">
                             <button class="btn btn-blue" @click="setPoints('event-1-p')">Оценить</button>
@@ -84,7 +133,7 @@ export default {
         },
         setPoints(id){
             this.$router.push({ path: `/set-points/${id}` })
-        }
+        },
     },
 }
 </script>

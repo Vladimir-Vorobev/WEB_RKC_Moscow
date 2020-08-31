@@ -28,12 +28,12 @@
                     </li>
                     <li class="nav-item d-none d-sm-none d-md-none d-lg-block d-xl-block">
                         <router-link to="/" class="router-link">
-                            <a class="nav-link ourSite" ref="AddCard">RKC</a>
+                            <a class="nav-link ourSite" ref="AddCard">Events 2.0</a>
                         </router-link>
                     </li>
                     <li class="nav-item dropdown d-block d-sm-block d-md-block d-lg-none d-xl-none">
                         <a class="nav-link dropdown-toggle ourSite" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            RKC
+                            Events 2.0
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <router-link to="/events" class="router-link">
